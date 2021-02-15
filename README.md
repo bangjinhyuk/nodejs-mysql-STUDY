@@ -115,6 +115,7 @@ aws 서버 nodejs-mysql 환경 공부
 	$ sudo git pull(저장소 업데이트)
 + 참조 사이트
 	+ git pull 에러시 (https://steemit.com/develope/@snowsprout/git-git-pull-error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
+	+ ftp-simple 수정 권한 에러시 (https://share4share.tistory.com/32) 
 
 
 	
