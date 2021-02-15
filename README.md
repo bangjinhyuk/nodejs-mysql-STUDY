@@ -87,6 +87,34 @@ aws 서버 nodejs-mysql 환경 공부
 	+ EC2 VS code 리모트 방법3(https://hoik92.github.io/aws/2019/06/03/AWS-EC2-Connect-Using-VSCode.html)
 	+ EC2 VS code 리모트 방법4(https://teddylee777.github.io/aws/visualstudiocode-%EC%97%90%EC%84%9C-aws-remote-%EC%97%B0%EA%B2%B0)
 	+ 우분투 깃허브 연동1(https://velog.io/@dysim361/%EC%9A%B0%EB%B6%84%ED%88%ACubunto-GitHub-%EC%97%B0%EB%8F%99-%EB%B0%8F-%EC%97%85%EB%A1%9C%EB%93%9C)
-	+ 우분투 깃허브 연동1(https://uhou.tistory.com/99)
+	+ 우분투 깃허브 연동2(https://uhou.tistory.com/99)
 	+ Mysql 서버 설치(https://loy124.tistory.com/199?category=768865)
+	
+## 2021.02.15 github-vscode-ubuntu 연동 오류 해결
++ vscode에서 ftp-simple을 사용하여 코드 수정시 Permission Denied가 뜰때
+	```
+	$ chown -R root:root (디렉토리 이름)
+	$ chmod -R 777 (디렉토리 이름)
+	```
+	
++ ubuntu에서 깃허브로 올리는 순서
+	```
+	$ sudo git init
+	$ git status
+	$ sudo git add -A : 모든 파일 추가
+	$ sudo git commit
+	$ sudo git commit -m "커밋 메세지 작성"
+	$ sudo git push origin +master(또는 main)
+	$ sudo git pull(저장소 업데이트)
+	$ git log
+	```
+
++ error: Your local changes to the following files would be overwritten by merge: 와 같은 에러 발생시
+	```
+	$ git stash
+	$ sudo git pull(저장소 업데이트)
++ 참조 사이트
+	+ git pull 에러시 (https://steemit.com/develope/@snowsprout/git-git-pull-error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
+
+
 	
